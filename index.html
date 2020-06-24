@@ -1,0 +1,156 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="assets/estilos.css" type="text/css">
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+</head>
+
+<body class="w3-dark-gray">
+  <div class="w3-panel">
+    <div class="w3-container w3-leftbar w3-border-blue w3-light-blue">
+        <a href="https://ips.edu.ar/" target="_blank" class="w3-bar-item w3-button"><img src="assets/poli.png" height="100px"/></a>
+        <a href="tabla.html" class="w3-bar-item w3-button w3-right"><img src="assets/tabla.svg" height="60px"/>
+        <p>Tabla</p>
+        </a>
+        <a href="respuestas.php" class="w3-bar-item w3-button w3-right"><img src="assets/resultados.svg" height="60px"/>
+        <p>Respuestas</p>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-right"><img src="assets/encuesta.svg" height="60px"/>
+        <p>Formulario</p>
+        </a>
+    </div>
+  </div>
+  <div class="w3-panel">
+    <div class="w3-container w3-Sand w3-padding">
+  <form action="registro.php" method="POST">
+    <div class="w3-row">
+      <div class="w3-container w3-half w3-padding">
+        <div class="w3-group">
+          <label class="w3-label">Apellido</label>
+          <input class="w3-input" type="text" name="apellido" id="apellido">
+        </div>
+        <div class="w3-group">
+          <label>Nombres</label>
+          <input class="w3-input" type="text" name="nombre" id="nombre">
+        </div>
+        <div class="w3-group">
+          <p>Sexo:</p>
+          <input type="radio" id="opcion1" name="sexo"  value="masc">
+          <label for="opcion1"> Masculino</label><br>
+          <input type="radio" id="opcion2" name="sexo"  value="fem">
+          <label for="opcion2"> Femenino</label><br>
+          <input type="radio" id="opcion3" name="sexo"  value="otro">
+          <label for="opcion3"> Otro</label><br>
+          <input id="otrosexo" type="hidden" name="otrosexo" value="">
+          <p></p>
+        </div>
+        <div class="w3-group">
+          <label>Color favorito</label>
+          <input class="w3-input" type="color" name="color" id="color">
+          <p></p>
+        </div>
+        <div class="w3-group">
+          <label>Tiene alguna enfermedad?</label>
+          <input type="checkbox" name="enfermedad" id="enfermedad" value="si">
+          <label for="enfermedad"> Si</label><br>
+          <span  class="" type="text" id="notr">Cual?</span>
+          <input id="txt"   type="hidden" name="otraenfermedad" value="">
+        </div>
+        <div class="w3-group">
+          <p>Linea preferida</p>
+          <input type="radio" id="linea" name="linea" value="top">
+          <label for="linea"> Top</label><br>
+          <input type="radio" id="linea2" name="linea" value="jungla">
+          <label for="linea2"> Jungla</label><br>
+          <input type="radio" id="linea3" name="linea" value="mid">
+          <label for="linea3"> Mid</label><br>
+          <input type="radio" id="linea4" name="linea" value="adc">
+          <label for="linea4"> Adc</label><br>
+          <input type="radio" id="linea5" name="linea" value="support">
+          <label for="linea5"> Support</label><br>
+          <input type="radio" id="linea6" name="linea" value="merca">
+          <label for="linea6"> La de merca</label><br>
+        </div>
+        <div class="w3-group">
+          <label>E-Mail</label>
+          <input class="w3-input" type="email" name="email" id="email">
+        </div>
+        <div class="w3-group">
+          <label>WhatsApp</label>
+          <input class="w3-input" type="tel" name="telefono" id="telefono">
+        </div>
+        <div class="w3-group">
+          <label>Serie favorita:</label>
+          <input class="w3-input" type="imput" name="serie" id="serie">
+        </div>
+        <div class="w3-group">
+          <label>Posicion sexual favorita:</label>
+          <input class="w3-input" type="imput" name="posicion" id="posicion">
+        </div>
+        <div class="w3-group">
+          <label>Cuantos hijos tendr&iacute;a?</label>
+          <input class="w3-input" type="number" name="hijos" id="hijos">
+        </div>
+        <div class="w3-group">
+          <label>Describase brevemente:</label>
+          <input class="w3-input" type="imput" name="descripcion" id="descripcion">
+        </div>
+        <div class="w3-group">
+          <label>El amor en una palabra:</label>
+          <input class="w3-input" type="imput" name="amor" id="amor">
+        </div>
+        <div class="w3-group">
+          <p>Si un enano le ofrece su amistad:</p>
+          <input type="radio" id="op1" name="enano" id="enano" value="acepto">
+          <label for="op1"> Lo acepto como amigo de talla baja</label><br>
+          <input type="radio" id="op2" name="enano" id="enano" value="rechazo">
+          <label for="op2"> Le digo que ni en pedo, los enanos son todos ortivas</label><br>
+          <input type="radio" id="op3" name="enano" id="enano" value="burlo">
+          <label for="op3"> Me burlo de el por enano puto</label><br>
+          <input type="radio" id="op4" name="enano" id="enano" value="apoyo">
+          <label for="op4"> Le apoyo un vaso en la cabeza</label><br>
+        </div>
+        <div class="w3-group">
+          <label>Este formulario en una palabra:</label>
+          <input class="w3-input" type="imput" name="formul" id="formul">
+        </div>
+        <div class="w3-group">
+          <label>Si tuviera que quedarse con 1 sola banda?</label>
+          <input class="w3-input" type="imput" name="banda" id="banda">
+        </div>
+        <div class="w3-group">
+          <label>Pel&iacute;cula favorita:</label>
+          <input class="w3-input" type="imput" name="peli" id="peli">
+        </div>
+        <div class="w3-group">
+          <label>Mejor bebida alcoh&oacute;lica:</label>
+          <input class="w3-input" type="imput" name="alcohol" id="alcohol">
+        </div>
+        <div class="w3-group">
+          <label>Comida preferida:</label>
+          <input class="w3-input" type="imput" name="comida" id="comida">
+        </div>
+        <div class="w3-group">
+          <label>Algo rescatable de la cuarentena?</label>
+          <input class="w3-input" type="imput" name="opinion" id="opinion">
+        </div>
+        <div class="w3-group">
+          <label>Libro que le recomendarias a un ni&ntilde;o:</label>
+          <input class="w3-input" type="imput" name="libro" id="libro">
+        </div>
+        <div class="w3-group">
+          <label>Contrase&ntilde;a</label>
+          <input class="w3-input" type="password" name="clave" id="clave">
+        </div>
+        <div class="w3-container w3-center w3-padding">
+          <button class="w3-button w3-blue w3-padding" type="submit" name="Enviar" id="enviar">Enviar</button>
+        </div>
+      </div>
+    </div>
+ </form>
+  </div>
+</div>
+      <script type="text/javascript" src="funciones.js"></script>
+</body>
+</html>
